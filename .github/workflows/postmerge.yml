@@ -11,7 +11,7 @@ concurrency:
 
 jobs:
   cron-trigger:
-    if: github.repository == 'NVIDIA/NVFlare' # avoid triggering in forked repo
+    if: github.repository == 'pxLi/NVFlare' # avoid triggering in forked repo
     runs-on: ubuntu-latest
     steps:
       - run: echo "Cron triggered post-merge run..."
